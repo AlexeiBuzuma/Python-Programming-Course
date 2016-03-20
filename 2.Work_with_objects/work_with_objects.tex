@@ -1,0 +1,164 @@
+\documentclass[10pt]{beamer}
+\input{./../settings.tex}
+
+  \title[]
+  {\textbf{Python language}\\Work with objects}
+ %-------------------------------------------------------
+ % THE BODY OF THE PRESENTATION
+ %-------------------------------------------------------
+ 
+\begin{document}
+
+%-------------------------------------------------------
+% THE TITLEPAGE
+%-------------------------------------------------------
+ 	
+{\1% % this is the name of the PDF file for the background
+\begin{frame}[plain,noframenumbering] % the plain option removes the header from the title page, noframenumbering removes the numbering of this frame only
+\titlepage % call the title page information from above
+\end{frame}}
+ 		
+ 		
+\begin{frame}{Content}{}
+ 	\tableofcontents
+\end{frame}
+ 
+\defverbatim[colored]\chainAssigment{
+\begin{lstlisting}[numbers=left,language=Python,tabsize=4, showspaces=false]
+>>> a = b = c = 13
+\end{lstlisting}}
+
+\defverbatim[colored]\multipleAssigment{
+\begin{lstlisting}[numbers=left,language=Python,tabsize=4, showspaces=false]
+>>> a, b = 13, 42
+>>> a, b = b, a 	# swap
+>>>
+>>> data = [ 'book', 50, 91.1, (2015, 03, 09) ]
+>>> name, shares, price, date = data
+>>> name
+'book'
+>>> date
+(2015, 03, 09)
+\end{lstlisting}}
+ 
+%-------------------------------------------------------
+\section{Work with objects}
+%-------------------------------------------------------
+\subsection{Assignment}
+%-------------------------------------------------------
+\begin{frame}{Work with objects}{Assignment}
+%-------------------------------------------------------
+\begin{block}{Chain assigment}
+	\chainAssigment
+\end{block}
+\pause
+\begin{block}{Multiple assigment}
+	\multipleAssigment
+\end{block}
+	
+\end{frame}
+%-------------------------------------------------------
+
+\defverbatim[colored]\deleting{
+\begin{lstlisting}[numbers=left,language=Python,tabsize=4, showspaces=false]
+>>> a = 42
+>>> del(a)
+>>> print(a)
+>>>
+>>> a, b = 42, 666
+>>> del(a, b)
+\end{lstlisting}}
+%-------------------------------------------------------
+\subsection{Deleting}
+%-------------------------------------------------------
+\begin{frame}{Work with objects}{Deleting}
+%-------------------------------------------------------
+	\begin{block}{Deleting objects}
+		\deleting
+	\end{block}
+\end{frame}
+%-------------------------------------------------------
+
+\defverbatim[colored]\conversions{
+\begin{lstlisting}[numbers=left,language=Python,tabsize=4, showspaces=false]
+#!/usr/bin/env python3
+number = "42"
+print("Int:{}".format(int(number)))
+print("Int[base]:{}".format(int(number, 8)))
+print("Float:{}".format(float(number)))
+print("Hex:{}".format(hex(number)))
+print("Ord:{}".format(ord(number)))
+\end{lstlisting}}
+%-------------------------------------------------------
+\subsection{Conversion}
+%-------------------------------------------------------
+\begin{frame}{Work with objects}{Conversion}
+%-------------------------------------------------------
+	\begin{block}{Conversions}
+		\conversions
+	\end{block}
+\end{frame}
+%-------------------------------------------------------
+
+
+
+\defverbatim[colored]\immutable{
+\begin{lstlisting}[numbers=left,language=Python,tabsize=4, showspaces=false]
+>>> x = "Hello"
+>>> y = x 
+>>> y += "word"
+>>> x
+Hello
+\end{lstlisting}}
+%-------------------------------------------------------
+
+
+%-------------------------------------------------------
+\subsection{Immutable types}
+%-------------------------------------------------------
+\begin{frame}{Immutable vs mutable}{Immutable types}
+%-------------------------------------------------------
+	\begin{block}{Immutable types | string, int, float, tuple}
+		\immutable
+	\end{block}
+\end{frame}
+%-------------------------------------------------------
+\defverbatim[colored]\mutable{
+\begin{lstlisting}[numbers=left,language=Python,tabsize=4, showspaces=false]
+>>> x = [1, 2, 3]
+>>> y = x 
+>>> y += [3, 4, 5]
+>>> x
+[1, 2, 3, 4, 5]
+\end{lstlisting}}
+%-------------------------------------------------------
+
+\subsection{Mutable types}
+%-------------------------------------------------------
+\begin{frame}{Immutable vs mutable}{Mutable types}
+%-------------------------------------------------------
+	\begin{block}{Mutable types | list, dict, set, object}
+		\mutable
+	\end{block}
+\end{frame}
+%-------------------------------------------------------
+
+%-------------------------------------------------------
+\begin{frame}{Questions?}
+%-------------------------------------------------------
+\large Questions?
+\begin{center}
+		
+	\begin{block}{Contacts}
+		\begin{itemize}
+			\item email:    buzuma\_leha@mail.ru
+			\item Facebook: aleksei.buzuma
+		\end{itemize}
+	\end{block}
+	
+\end{center}
+		
+\end{frame}
+%-------------------------------------------------------
+
+\end{document}
