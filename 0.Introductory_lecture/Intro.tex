@@ -1,0 +1,430 @@
+\documentclass[10pt]{beamer}
+\input{./../settings.tex}
+
+\title[Why you need to learn Python?] % [] is optional - is placed on the bottom of the sidebar on every slide
+{
+	\textbf{Why you need to learn Python?}
+}
+
+\begin{document}
+	
+{\1% % this is the name of the PDF file for the background
+	\begin{frame}[plain,noframenumbering] 
+		\titlepage
+	\end{frame}
+}
+
+% Show table of content	
+\begin{frame}{Content}{}
+	\tableofcontents
+\end{frame}
+		
+%-------------------------------------------------------
+\section{Introduction}
+%-------------------------------------------------------
+
+%-------------------------------------------------------
+\subsection{What is Python?}
+%-------------------------------------------------------
+
+
+% ********************** Slide 2 ***********************
+\begin{frame}{Introduction}{What is Python?}
+%-------------------------------------------------------
+	\begin{center}
+		\includegraphics[width=0.6\textwidth]{pictures/python.png}
+	\end{center}
+\end{frame}
+% ******************************************************
+
+% ********************** Slide 3 ***********************
+\begin{frame}{Introduction}{What is Python?}
+%-------------------------------------------------------
+	\begin{block}{Python}
+		Python is an interpreted, object-oriented, high-level programming language with dynamic semantics.  This is a general-purpose language that can be equally well developed system applications with a graphical interface, command line utilities, scientific applications, games, applications for the Web, and much more.	
+	\end{block}
+\end{frame}
+% *****************************************************
+
+% ********************** Slide 4 ***********************
+\begin{frame}{Introduction}{What is Python?}
+%-------------------------------------------------------
+	\begin{center}
+		\includegraphics[width=0.9\textwidth]{pictures/1.png}
+	\end{center}
+\end{frame}
+% ******************************************************
+
+
+
+%-------------------------------------------------------
+\subsection{Dinamic vs Static}
+%-------------------------------------------------------
+
+% ********************** Slide 5 ***********************
+\begin{frame}[fragile]{Introduction}{Dinamic vs Static}
+%-------------------------------------------------------
+\begin{center}
+\begin{block}{Dinamic -- Python}
+			
+\begin{lstlisting}[language=Python]
+>>> variable = "string"
+>>> type(variable)
+<class 'str'>
+
+>>> variable = 42
+>>> type(variable)
+<class 'int'>
+
+\end{lstlisting}
+\end{block}
+		
+\pause
+		
+\begin{block}{Static -- C}
+			
+\begin{lstlisting}[language=C]
+int i = 10;
+i = "string";
+DO NOT COMPILE
+\end{lstlisting}
+
+\end{block}
+
+\end{center}
+\end{frame}
+% ******************************************************
+
+%-------------------------------------------------------
+\subsection{Strong vs Weak}
+%-------------------------------------------------------
+
+
+% ********************** Slide 6 ***********************
+\begin{frame}[fragile]{Introduction}{Strong vs Weak}
+%-------------------------------------------------------
+\begin{center}
+	
+\begin{block}{Weak -- JavaScript}
+	
+\begin{lstlisting}
+>>> [] + []  
+>>>
+
+>>> [] + {} 
+[object Object]
+
+>>> {} + []  
+0
+
+>>> {} + {}  
+NaN
+\end{lstlisting}
+
+
+\end{block}
+
+\end{center}
+
+\end{frame}
+% ******************************************************
+
+
+% ********************** Slide 7 ***********************
+\begin{frame}[fragile]{Introduction}{Strong vs Weak}
+%-------------------------------------------------------
+\begin{center}
+		
+\begin{block}{Weak -- JavaScript}
+			
+\begin{lstlisting}
+>>> Array(10)
+,,,,,,,,,
+
+>>> Array(10).join("wat")
+watwatwatwatwatwatwatwatwat
+
+>>> Array(10).join("wat" + 1)
+wat1wat1wat1wat1wat1wat1wat1wat1wat1
+
+>>> Array(10).join("wat" - 1) + " Batman!"      
+NaNNaNNaNNaNNaNNaNNaNNaNNaN Batman!
+\end{lstlisting}
+			
+			
+\end{block}
+		
+\end{center}
+	
+\end{frame}
+% ******************************************************
+
+% ********************** Slide 8 ***********************
+\begin{frame}{Introduction}{WAAAAAT?}
+	%-------------------------------------------------------
+	\begin{center}
+		\includegraphics[width=0.9\textwidth]{pictures/wat.jpg}
+	\end{center}
+\end{frame}
+% ******************************************************
+
+
+% ********************** Slide 9 ***********************
+\begin{frame}[fragile]{Introduction}{Strong vs Weak}
+%-------------------------------------------------------
+	
+\begin{center}
+		
+\begin{block}{Strong -- Python}
+\begin{lstlisting}[language=Python]
+>>> print 4 + "4"
+TypeError
+>>> print [] + {}
+TypeError
+\end{lstlisting}
+\end{block}
+		
+\end{center}
+	
+\end{frame}
+% ******************************************************
+
+%-------------------------------------------------------
+\subsection{History of Python}
+%-------------------------------------------------------
+
+\begin{frame}{Introduction}{History of Python}
+%-------------------------------------------------------
+	\begin{tikzpicture}[overlay,remember picture]
+	\node[anchor=south east,xshift=-10pt,yshift=20pt]
+	at (current page.south east) {
+		\includegraphics[width=0.4\textwidth]{pictures/1.jpg}
+	};
+	\end{tikzpicture}
+	
+	Guido van Rossum is a Dutch computer \\ 
+	programmer who is best known as the \\
+	author of the Python programming \\
+	language. In the Python community, \\
+	Van Rossum is known as a "Benevolent \\
+	Dictator For Life" (BDFL), meaning \\
+	that he continues to oversee the Python\\
+	development process, making decisions \\
+	where necessary.He was employed by \\
+	Google from 2005 until 7 December 2012,\\
+	where he spent half his time developing \\
+	the Python language. In January 2013, \\
+	Van Rossum started working for Dropbox.
+\end{frame}
+%-------------------------------------------------------
+
+%-------------------------------------------------------
+\subsection{Versions}
+\begin{frame}{Introduction}{Versions}
+	%-------------------------------------------------------
+	\begin{block}{Implementation started | December 1989}
+		\begin{itemize}
+			\item First appeared - 20 February 1991, 25 years ago
+		\end{itemize}
+	\end{block}	
+		
+	\begin{block}{Python 1.0 | January 1994}
+		\begin{itemize}
+			\item Python 1.6 - September 5, 2000
+		\end{itemize}
+	\end{block}	
+	
+	\begin{block}{Python 2.0 | October 16, 2000}
+		\begin{itemize}
+			\item Python 2.7 - July 3, 2010
+		\end{itemize}
+	\end{block}
+	
+	\begin{block}{Python 3.0 | December 3, 2008}
+		\begin{itemize}
+			\item Python 3.5 - September 13, 2015
+		\end{itemize}
+	\end{block}
+\end{frame}
+%-------------------------------------------------------
+
+
+% ********************** Slide 10 ***********************
+\begin{frame}{Introduction}{Pros and cons}
+%-------------------------------------------------------
+	\begin{itemize}
+		\item Pross
+		\begin{itemize}
+			\item Easy to learn
+			\item Cross-platform
+			\item Community
+			\item Open License
+			\item Efficiency
+			\item Simplicity
+			\item Batteries
+		\end{itemize}
+		
+		
+		\item Cons
+		\begin{itemize}
+			\item GIL
+			\item Perfomance (???)
+		\end{itemize}
+		
+	\end{itemize}	
+\end{frame}
+%-------------------------------------------------------
+
+
+% ********************** Slide 11 ***********************
+\begin{frame}{Introduction}{Stackoverflow statistic}
+%-------------------------------------------------------
+	\begin{center}
+		\includegraphics[width=0.6\textwidth]{pictures/stackoverflow.jpg}
+	\end{center}
+\end{frame}
+% ******************************************************
+
+% ********************** Slide 12 **********************
+\begin{frame}{Introduction}{RedMonk statistic}
+%-------------------------------------------------------
+	\begin{center}
+		\includegraphics[width=1\textwidth]{pictures/red_monk.png}
+	\end{center}
+\end{frame}
+% ******************************************************
+
+%-------------------------------------------------------
+\subsection{Where Python can be used?}
+%-------------------------------------------------------
+
+% ********************** Slide 13 **********************
+\begin{frame}{Introduction}{Where Python can be used?}
+%-------------------------------------------------------
+
+\begin{block}{Science}
+	\begin{itemize}	
+		\item NumPy - a numerical Python library (a bedrock library for anything to do with matrices)
+		
+		\item Pandas - a library for data analysis, similar to R’s data frames or an Excel spreadsheet, built on scipy and numpy
+		
+		\item Scikit-learn - rapidly turning into the default machine learning library, built on scipy
+		
+		\item Biopython - a bioinformatics library similar to bioperl
+		
+		\item SymPy - a symbolic manipulation package, written in pure Python.
+	\end{itemize}
+	
+\end{block}
+\end{frame}
+% ******************************************************
+
+% ********************** Slide 14 **********************
+\begin{frame}{Introduction}{Where Python can be used?}
+%-------------------------------------------------------
+	
+	\begin{block}{Web}
+		\begin{itemize}
+			\item Django
+			
+			\item Pyramid
+			
+			\item Bottle
+			
+			\item Flask
+			
+			\item Tornado
+		\end{itemize}
+		
+	\end{block}
+\end{frame}
+% ******************************************************
+
+% ********************** Slide 14 **********************
+\begin{frame}{Introduction}{Where Python can be used?}
+	%-------------------------------------------------------
+	
+	\begin{block}{High Perfomance Python}
+		\begin{itemize}
+			\item Cyton
+			
+			\item Numba
+			
+			\item Pythran
+			
+			\item PyPy
+			
+			\item Shed Skin
+		\end{itemize}
+		
+	\end{block}
+\end{frame}
+% ******************************************************
+
+% ********************** Slide 14 **********************
+\begin{frame}{Introduction}{Where Python can be used?}
+%-------------------------------------------------------
+	
+	\begin{block}{GUI applications}
+		\begin{itemize}
+			\item PyQT
+			
+			\item PyGTK
+			
+			\item Kivy
+			
+			\item wxWidgets
+	
+		\end{itemize}
+		
+	\end{block}
+\end{frame}
+% ******************************************************
+
+%-------------------------------------------------------
+\subsection{Indentation is very important!}
+%-------------------------------------------------------
+
+% ********************** Slide 14 **********************
+\begin{frame}[fragile]{Introduction}{Indentation is very important!}
+%-------------------------------------------------------
+	
+\begin{block}{Indentation}
+	
+\begin{lstlisting}[language=Python, tabsize=4, showspaces=true, showtabs=true]
+if True:
+    print("True")
+else:
+    print("False")
+
+if True:
+	print("True")
+    print("Error")
+
+if True:
+    print("True")
+  print("Error")
+\end{lstlisting}
+
+\end{block}	
+	
+\end{frame}
+
+
+%-------------------------------------------------------
+\begin{frame}{Introduction}{Questions?}
+%-------------------------------------------------------
+	\large Questions?
+	\begin{center}
+		
+		\begin{block}{Contacts}
+			\begin{itemize}
+				\item Email:    buzuma\_leha@mail.ru
+				\item Facebook: aleksei.buzuma
+			\end{itemize}
+		\end{block}
+		
+	\end{center}
+\end{frame}
+
+\end{document}
