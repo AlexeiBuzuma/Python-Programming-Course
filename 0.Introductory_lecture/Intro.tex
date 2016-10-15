@@ -3,7 +3,7 @@
 
 \title[Why you need to learn Python?] % [] is optional - is placed on the bottom of the sidebar on every slide
 {
-	\textbf{Why you need to learn Python?}
+	\textbf{Why do you need to learn Python?}
 }
 
 \begin{document}
@@ -86,7 +86,7 @@
 \begin{lstlisting}[language=C]
 int i = 10;
 i = "string";
-DO NOT COMPILE
+Compile Error
 \end{lstlisting}
 
 \end{block}
@@ -98,6 +98,15 @@ DO NOT COMPILE
 %-------------------------------------------------------
 \subsection{Strong vs Weak}
 %-------------------------------------------------------
+
+% ********************** Slide 6 ***********************
+\begin{frame}[fragile]{Introduction}{Strong vs Weak}
+%-------------------------------------------------------
+\begin{center}
+		\Huge Let's talk about JavaScript!
+\end{center}
+\end{frame}
+% ******************************************************
 
 
 % ********************** Slide 6 ***********************
@@ -177,15 +186,85 @@ NaNNaNNaNNaNNaNNaNNaNNaNNaN Batman!
 		
 \begin{block}{Strong -- Python}
 \begin{lstlisting}[language=Python]
->>> print 4 + "4"
+>>> print 13 + "13"
 TypeError
 >>> print [] + {}
+TypeError
+\end{lstlisting}
+\end{block}
+
+\pause
+
+\begin{block}{Strong -- Ruby}
+\begin{lstlisting}[language=Ruby]
+irb(main)> 42 + "42"
+TypeError
+irb(main)> [] + {}
 TypeError
 \end{lstlisting}
 \end{block}
 		
 \end{center}
 	
+\end{frame}
+% ******************************************************
+
+% ********************** Slide 2 ***********************
+\begin{frame}{Introduction}{JS}
+%-------------------------------------------------------
+\begin{center}
+	\includegraphics[width=0.9\textwidth]{pictures/JS.jpg}
+\end{center}
+\end{frame}
+% ******************************************************
+
+% ********************** Slide 7 ***********************
+\begin{frame}[fragile]{Introduction}{JS}
+%-------------------------------------------------------
+\begin{center}
+		
+\begin{block}{JavaScript}
+			
+\begin{lstlisting}
+> '5' - 3
+2
+> '5' + 3
+'53'
+>'foo' + + 'foo'
+'fooNaN'
+>'5' + - '2'
+'5-2'
+> var x = 3;
+>'5' + x - x
+50
+>'5' - x + x
+5
+
+\end{lstlisting}
+			
+			
+\end{block}
+		
+\end{center}
+	
+\end{frame}
+% ******************************************************
+
+% ********************** Slide 2 ***********************
+\begin{frame}{Introduction}{JS}
+%-------------------------------------------------------
+\begin{center}
+	\includegraphics[width=0.6\textwidth]{pictures/wat1.jpg}
+\end{center}
+\end{frame}
+% ******************************************************
+
+% ********************** Slide 2 ***********************
+\begin{frame}{Introduction}{JS}
+%-------------------------------------------------------
+\begin{center}
+	\includegraphics[width=0.8\textwidth]{pictures/no_jokes.jpg}
+\end{center}
 \end{frame}
 % ******************************************************
 
@@ -267,7 +346,7 @@ TypeError
 		
 		\item Cons
 		\begin{itemize}
-			\item GIL
+			\item GIL (???)
 			\item Perfomance (???)
 		\end{itemize}
 		
@@ -382,8 +461,58 @@ TypeError
 % ******************************************************
 
 %-------------------------------------------------------
+\subsection{IDE}
+%-------------------------------------------------------
+
+
+% ********************** Slide 14 **********************
+\begin{frame}[fragile]{Introduction}{IDE}
+%-------------------------------------------------------
+	
+\begin{block}{IDE}
+	\begin{itemize}
+		
+		\pause
+		\item PyCharm
+		\pause
+			
+		\item Sublime Text
+		\pause
+		
+		\item Atom
+		\pause	
+		
+		\item Vim
+		\pause
+		
+		\item Jupyter
+		\pause
+		
+		\item ipython, bpython
+	\end{itemize}
+\end{block}	
+	
+\end{frame}
+%-------------------------------------------------------
+
+%-------------------------------------------------------
+\subsection{Jobs}
+%-------------------------------------------------------
+
+% ********************** Slide 11 ***********************
+\begin{frame}{Introduction}{tut.by jobs}
+%-------------------------------------------------------
+\begin{center}
+\includegraphics[width=1.1\textwidth]{pictures/minsk_job_tutby.png}
+\end{center}
+\end{frame}
+% ******************************************************
+
+%-------------------------------------------------------
 \subsection{Indentation is very important!}
 %-------------------------------------------------------
+
+
 
 % ********************** Slide 14 **********************
 \begin{frame}[fragile]{Introduction}{Indentation is very important!}
@@ -419,7 +548,7 @@ if True:
 		
 		\begin{block}{Contacts}
 			\begin{itemize}
-				\item Email:    buzuma\_leha@mail.ru
+				\item Email:    buzuma.leha@gmail.com
 				\item Facebook: aleksei.buzuma
 			\end{itemize}
 		\end{block}
