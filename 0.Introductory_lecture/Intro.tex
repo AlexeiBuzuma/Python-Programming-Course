@@ -29,6 +29,25 @@
 
 
 % ********************** Slide 2 ***********************
+\begin{frame}{Problem of improper use.}
+%-------------------------------------------------------
+\begin{center}
+	\LARGE Why do I need a Scala? \\I'am JS programmer!
+\end{center}
+\end{frame}
+% ******************************************************
+
+% ********************** Slide 2 ***********************
+\begin{frame}{Introduction}{Problem of improper use.}
+	%-------------------------------------------------------
+	\begin{center}
+		\large{I can solve any problem with my programming language!}
+		\includegraphics[width=0.4\textwidth]{pictures/improper.jpg}
+	\end{center}
+\end{frame}
+% ******************************************************
+
+% ********************** Slide 2 ***********************
 \begin{frame}{Introduction}{What is Python?}
 %-------------------------------------------------------
 	\begin{center}
@@ -45,6 +64,18 @@
 	\end{block}
 \end{frame}
 % *****************************************************
+
+%-------------------------------------------------------
+\subsection{Dinamic vs Static}
+%-------------------------------------------------------
+% ********************** Slide 5 ***********************
+\begin{frame}[fragile]{Introduction}{Dinamic vs Static}
+	\begin{center}
+		\LARGE What is dynamic / static typing? \\
+		\pause
+		\LARGE What is strong / weak typing?
+	\end{center}
+\end{frame}
 
 % ********************** Slide 4 ***********************
 \begin{frame}{Introduction}{What is Python?}
@@ -99,18 +130,39 @@ Compile Error
 \subsection{Strong vs Weak}
 %-------------------------------------------------------
 
-% ********************** Slide 6 ***********************
+% ********************** Slide 9 ***********************
 \begin{frame}[fragile]{Introduction}{Strong vs Weak}
 %-------------------------------------------------------
+	
 \begin{center}
-		\Huge Let's talk about JavaScript!
+		
+\begin{block}{Strong -- Python}
+\begin{lstlisting}[language=Python]
+>>> print 13 + "13"
+TypeError
+>>> print [] + {}
+TypeError
+\end{lstlisting}
+\end{block}
+		
+\pause
+		
+\begin{block}{Strong -- Ruby}
+\begin{lstlisting}[language=Ruby]
+irb(main)> 42 + "42"
+TypeError
+irb(main)> [] + {}
+TypeError
+\end{lstlisting}
+\end{block}
+		
 \end{center}
+	
 \end{frame}
 % ******************************************************
 
-
 % ********************** Slide 6 ***********************
-\begin{frame}[fragile]{Introduction}{Strong vs Weak}
+\begin{frame}[fragile]{Introduction}{Let's talk about JavaScript!}
 %-------------------------------------------------------
 \begin{center}
 	
@@ -140,7 +192,7 @@ NaN
 
 
 % ********************** Slide 7 ***********************
-\begin{frame}[fragile]{Introduction}{Strong vs Weak}
+\begin{frame}[fragile]{Introduction}{Let's talk about JavaScript!}
 %-------------------------------------------------------
 \begin{center}
 		
@@ -178,48 +230,10 @@ NaNNaNNaNNaNNaNNaNNaNNaNNaN Batman!
 % ******************************************************
 
 
-% ********************** Slide 9 ***********************
-\begin{frame}[fragile]{Introduction}{Strong vs Weak}
-%-------------------------------------------------------
-	
-\begin{center}
-		
-\begin{block}{Strong -- Python}
-\begin{lstlisting}[language=Python]
->>> print 13 + "13"
-TypeError
->>> print [] + {}
-TypeError
-\end{lstlisting}
-\end{block}
 
-\pause
-
-\begin{block}{Strong -- Ruby}
-\begin{lstlisting}[language=Ruby]
-irb(main)> 42 + "42"
-TypeError
-irb(main)> [] + {}
-TypeError
-\end{lstlisting}
-\end{block}
-		
-\end{center}
-	
-\end{frame}
-% ******************************************************
-
-% ********************** Slide 2 ***********************
-\begin{frame}{Introduction}{JS}
-%-------------------------------------------------------
-\begin{center}
-	\includegraphics[width=0.9\textwidth]{pictures/JS.jpg}
-\end{center}
-\end{frame}
-% ******************************************************
 
 % ********************** Slide 7 ***********************
-\begin{frame}[fragile]{Introduction}{JS}
+\begin{frame}[fragile]{Introduction}{Let's talk about JavaScript!}
 %-------------------------------------------------------
 \begin{center}
 		
@@ -251,7 +265,7 @@ TypeError
 % ******************************************************
 
 % ********************** Slide 2 ***********************
-\begin{frame}{Introduction}{JS}
+\begin{frame}{Introduction}{Let's talk about JavaScript!}
 %-------------------------------------------------------
 \begin{center}
 	\includegraphics[width=0.6\textwidth]{pictures/wat1.jpg}
@@ -260,13 +274,40 @@ TypeError
 % ******************************************************
 
 % ********************** Slide 2 ***********************
-\begin{frame}{Introduction}{JS}
+\begin{frame}{Introduction}{Why JS is terrible?}
 %-------------------------------------------------------
 \begin{center}
-	\includegraphics[width=0.8\textwidth]{pictures/no_jokes.jpg}
-\end{center}
+	\begin{block}{Why JS is terrible?}
+		\begin{itemize}
+			\item \url{https://whydoesitsuck.com/why-does-javascript-suck/}
+			\pause 
+			
+			\item \url{http://live.julik.nl/2013/05/javascript-is-shit}
+			\pause 
+			
+			\item \url{http://www.boronine.com/2012/12/14/Why-JavaScript-Still-Sucks/}
+			\pause
+			
+			\item \url{https://simpleprogrammer.com/2013/05/06/why-javascript-is-doomed/}
+			\pause
+			
+			\item \url{https://kaushalsubedi.com/blog/2014/10/15/node-js-sucks-heres-why/}
+			
+		\end{itemize}
+	\end{block}
+\end{center}|
+
 \end{frame}
-% ******************************************************
+
+
+% ********************** Slide 2 ***********************
+\begin{frame}{Introduction}{Links}
+%-------------------------------------------------------
+\begin{center}
+	\Large{Nothing is perfect} 
+	\url{https://wiki.theory.org/YourLanguageSucks/}
+\end{center}|
+\end{frame}
 
 %-------------------------------------------------------
 \subsection{History of Python}
@@ -460,40 +501,120 @@ TypeError
 \end{frame}
 % ******************************************************
 
-%-------------------------------------------------------
-\subsection{IDE}
-%-------------------------------------------------------
-
 
 % ********************** Slide 14 **********************
 \begin{frame}[fragile]{Introduction}{IDE}
-%-------------------------------------------------------
+	%-------------------------------------------------------
 	
-\begin{block}{IDE}
-	\begin{itemize}
-		
-		\pause
-		\item PyCharm
-		\pause
+	\begin{block}{IDE}
+		\begin{itemize}
 			
-		\item Sublime Text
-		\pause
-		
-		\item Atom
-		\pause	
-		
-		\item Vim
-		\pause
-		
-		\item Jupyter
-		\pause
-		
-		\item ipython, bpython
-	\end{itemize}
-\end{block}	
+			\item PyCharm
+			
+			\item Sublime Text
+			
+			\item Atom
+			
+			\item Vim
+			
+			\item Jupyter
+			
+			\item ipython, bpython
+		\end{itemize}
+	\end{block}	
 	
 \end{frame}
 %-------------------------------------------------------
+
+% ********************** Slide 14 **********************
+\begin{frame}{Introduction}{What is written on Python?}
+%-------------------------------------------------------
+	\begin{center}
+		\Huge What is written on Python?
+	\end{center}
+\end{frame}
+% ******************************************************
+
+% ********************** Slide 14 **********************
+\begin{frame}{Introduction}{What is written on Python?}
+	%-------------------------------------------------------
+	\begin{center}
+		\includegraphics[width=0.9\textwidth]{pictures/bit_torrent.png}
+		\large{\\BitTorrent, original client, along with several derivatives}
+	\end{center}
+\end{frame}
+% ******************************************************
+
+% ********************** Slide 14 **********************
+\begin{frame}{Introduction}{What is written on Python?}
+	%-------------------------------------------------------
+	\begin{center}
+		\includegraphics[width=1\textwidth]{pictures/dropbox.png}
+		\large{\\Dropbox, a web-based file hosting service}
+	\end{center}
+\end{frame}
+% ******************************************************
+
+% ********************** Slide 14 **********************
+\begin{frame}{Introduction}{What is written on Python?}
+	%-------------------------------------------------------
+	\begin{center}
+		\includegraphics[width=1\textwidth]{pictures/open_stack.png}
+		\large{\\OpenStack, a cloud computing IaaS platform}
+	\end{center}
+\end{frame}
+% ******************************************************
+
+% ********************** Slide 14 **********************
+\begin{frame}{Introduction}{What is written on Python?}
+	%-------------------------------------------------------
+	\begin{center}
+		\includegraphics[width=1\textwidth]{pictures/google.png}
+		\\"Python has been an important part of Google since the beginning, and remains so as the system grows and evolves. Today dozens of Google engineers use Python, and we're looking for more people with skills in this language." said Peter Norvig, director of search quality at Google, Inc.
+	\end{center}
+\end{frame}
+% ******************************************************
+
+% ********************** Slide 14 **********************
+\begin{frame}{Introduction}{What is written on Python?}
+	%-------------------------------------------------------
+	\begin{center}
+		\includegraphics[width=1\textwidth]{pictures/world_of_tanks.png}
+		\large{\\World of Tanks uses Python for most of its tasks}
+	\end{center}
+\end{frame}
+% ******************************************************
+
+% ********************** Slide 14 **********************
+\begin{frame}{Introduction}{What is written on Python?}
+	%-------------------------------------------------------
+	\begin{center}
+		\includegraphics[width=0.6\textwidth]{pictures/batl2.jpg}
+		\large{\\Battlefield 2 uses Python for all of its addons and a lot of its functionality}
+	\end{center}
+\end{frame}
+% ******************************************************
+
+
+
+% ********************** Slide 14 **********************
+\begin{frame}{Introduction}{What is written on Python?}
+	%-------------------------------------------------------
+	\begin{center}
+		\includegraphics[width=1\textwidth]{pictures/civilization.png}
+		\large{\\Civilization IV uses Python for most of its tasks}
+	\end{center}
+\end{frame}
+% ******************************************************
+
+% ********************** Slide 14 **********************
+\begin{frame}{Introduction}{What is written on Python?}
+	%-------------------------------------------------------
+	\begin{center}
+		\Huge and others...
+	\end{center}
+\end{frame}
+% ******************************************************
 
 %-------------------------------------------------------
 \subsection{Jobs}
@@ -515,29 +636,29 @@ TypeError
 
 
 % ********************** Slide 14 **********************
-\begin{frame}[fragile]{Introduction}{Indentation is very important!}
+%\begin{frame}[fragile]{Introduction}{Indentation is very important!}
 %-------------------------------------------------------
 	
-\begin{block}{Indentation}
+%\begin{block}{Indentation}
 	
-\begin{lstlisting}[language=Python, tabsize=4, showspaces=true, showtabs=true]
-if True:
-    print("True")
-else:
-    print("False")
-
-if True:
-	print("True")
-    print("Error")
-
-if True:
-    print("True")
-  print("Error")
-\end{lstlisting}
-
-\end{block}	
-	
-\end{frame}
+%\begin{lstlisting}[language=Python, tabsize=4, showspaces=true, showtabs=true]
+%if True:
+%    print("True")
+%else:
+%    print("False")
+%
+%if True:
+%	print("True")
+%    print("Error")
+%
+%if True:
+%    print("True")
+%  print("Error")
+%\end{lstlisting}
+%
+%\end{block}	
+%	
+%\end{frame}
 
 
 %-------------------------------------------------------
