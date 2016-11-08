@@ -15,9 +15,8 @@
 }
 
 % Show table of content	
-\begin{frame}{Content}{}
-	\tableofcontents
-\end{frame}
+%\begin{frame}{Content}{}
+%\end{frame}
 		
 %-------------------------------------------------------
 \section{Introduction}
@@ -73,7 +72,9 @@
 	\begin{center}
 		\LARGE What is dynamic / static typing? \\
 		\pause
-		\LARGE What is strong / weak typing?
+		\LARGE What is strong / weak typing? \\
+		\pause 
+		\LARGE What is explicit / implicit typing
 	\end{center}
 \end{frame}
 
@@ -96,15 +97,15 @@
 \begin{frame}[fragile]{Introduction}{Dinamic vs Static}
 %-------------------------------------------------------
 \begin{center}
-\begin{block}{Dinamic -- Python}
+\begin{block}{Dinamic -- Python (JavaScript, Ruby)}
 			
 \begin{lstlisting}[language=Python]
->>> variable = "string"
->>> type(variable)
+>>> string = "string"
+>>> type(string)
 <class 'str'>
 
->>> variable = 42
->>> type(variable)
+>>> number = 42
+>>> type(number)
 <class 'int'>
 
 \end{lstlisting}
@@ -112,12 +113,11 @@
 		
 \pause
 		
-\begin{block}{Static -- C}
+\begin{block}{Static -- Java (C, C++, C\#)}
 			
-\begin{lstlisting}[language=C]
-int i = 10;
-i = "string";
-Compile Error
+\begin{lstlisting}[language=Java]
+int i = 42;
+String greeting = "Hello world!";
 \end{lstlisting}
 
 \end{block}
@@ -199,47 +199,6 @@ NaN
 \begin{block}{Weak -- JavaScript}
 			
 \begin{lstlisting}
->>> Array(10)
-,,,,,,,,,
-
->>> Array(10).join("wat")
-watwatwatwatwatwatwatwatwat
-
->>> Array(10).join("wat" + 1)
-wat1wat1wat1wat1wat1wat1wat1wat1wat1
-
->>> Array(10).join("wat" - 1) + " Batman!"      
-NaNNaNNaNNaNNaNNaNNaNNaNNaN Batman!
-\end{lstlisting}
-			
-			
-\end{block}
-		
-\end{center}
-	
-\end{frame}
-% ******************************************************
-
-% ********************** Slide 8 ***********************
-\begin{frame}{Introduction}{WAAAAAT?}
-	%-------------------------------------------------------
-	\begin{center}
-		\includegraphics[width=0.9\textwidth]{pictures/wat.jpg}
-	\end{center}
-\end{frame}
-% ******************************************************
-
-
-
-
-% ********************** Slide 7 ***********************
-\begin{frame}[fragile]{Introduction}{Let's talk about JavaScript!}
-%-------------------------------------------------------
-\begin{center}
-		
-\begin{block}{JavaScript}
-			
-\begin{lstlisting}
 > '5' - 3
 2
 > '5' + 3
@@ -253,7 +212,6 @@ NaNNaNNaNNaNNaNNaNNaNNaNNaN Batman!
 50
 >'5' - x + x
 5
-
 \end{lstlisting}
 			
 			
@@ -264,11 +222,32 @@ NaNNaNNaNNaNNaNNaNNaNNaNNaN Batman!
 \end{frame}
 % ******************************************************
 
+
+% ********************** Slide 8 ***********************
+\begin{frame}{Introduction}{Typing}
+%-------------------------------------------------------
+	\begin{center}
+		\includegraphics[width=0.75\textwidth]{pictures/typing.png}
+	\end{center}
+\end{frame}
+% ******************************************************
+
+
+% ********************** Slide 8 ***********************
+\begin{frame}{Introduction}{WAAAAAT?}
+%-------------------------------------------------------
+	\begin{center}
+		\includegraphics[width=0.9\textwidth]{pictures/wat.jpg}
+	\end{center}
+\end{frame}
+% ******************************************************
+
+
 % ********************** Slide 2 ***********************
 \begin{frame}{Introduction}{Let's talk about JavaScript!}
 %-------------------------------------------------------
 \begin{center}
-	\includegraphics[width=0.6\textwidth]{pictures/wat1.jpg}
+	\includegraphics[width=0.9\textwidth]{pictures/shot.jpg}
 \end{center}
 \end{frame}
 % ******************************************************
@@ -466,7 +445,7 @@ NaNNaNNaNNaNNaNNaNNaNNaNNaN Batman!
 	
 	\begin{block}{High Perfomance Python}
 		\begin{itemize}
-			\item Cyton
+			\item Cython
 			
 			\item Numba
 			
